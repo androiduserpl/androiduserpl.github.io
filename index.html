@@ -7,30 +7,43 @@
 </head>
 
 <body>
-    <form action="https://formspree.io/nowakowski.adrian.rafal@gamil.com" method="POST">
-        <label for="name">Imię i nazwisko</label>
-        <br>
-        <input type="text" id="name" name="Nazwisko">
-        <br>
-
-        <label for="emali">Twój email</label>
-        <br>
-        <input type="email" id="email" name="Odpowiedz na">
-        <br>
-
-        <label for="tel">Numer telefonu</label>
-        <br>
-        <input type="number" id="tel" name="telefon">
-        <br>
-
-        <label for="message"></label>Widomość
-        <br>
-        <textarea name="wiadomość" id="massage" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Send">
-        <br>
-
-    </form>
+   
+   <!-- formularz - start -->
+    <form action="https://formspree.io/a.nowakowski@athina.com.pl" method="POST">
+        <label for="name">Imię</label><br>
+        <input type="text" id="name" name="Imię"><br>
+        
+         <label for="surname">Nazwisko</label><br>
+        <input type="text" id="surname" name="Nazwisko"><br>
+        
+         <label for="email">Twój adres email</label><br>
+        <input type="email" id="emali" name="Adres email"><br>
+        
+        <label for="tel">Numer telefonu</label><br>
+        <input type="number" id="tel" name="Numer telefonu"><br>
+        
+        <label for="miasto">Twoje miasto</label><br>    <!-- wybór miasta -->
+        <select name="select" id="miasto" name="Miasto">
+            <option value="Kraków" selected>Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+        
+        <label for="sex">Twoja płeć</label><br>    <!-- wybór półci -->
+        <select name="select" id="sex" name="Płeć">
+            <option value="Męszczyzna">Męszczyzna</option>
+            <option value="Kobieta" selected>Kobieta</option>
+            <option value="Inna">Inna</option>
+        </select><br>
+        
+        <label for="checkbox">Wyrażam zgodę na przetwarzanie danych osobowyc</label><br>
+        <input type="checkbox" id="checkbox" name="checkbox"><br>
+        
+        <label for="massage">Wiadomość</label><br>
+        <textarea name="massage" id="message" cols="30" rows="10"></textarea>
+        </form>
+    <!-- formularz - stop -->
+    
 </body>
 
 </html>
