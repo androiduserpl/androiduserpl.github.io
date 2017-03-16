@@ -14,22 +14,22 @@
     <form action="https://formspree.io/a.nowakowski@athina.com.pl" method="POST">
         <label for="name">Imię</label>
         <br>
-        <input class="uppercase" type="text" id="name" name="Imię">
+        <input type="text" id="name" name="imie" value="imie">
         <br>
 
         <label for="surname">Nazwisko</label>
         <br>
-        <input class="uppercase" type="text" id="surname" name="Nazwisko">
+        <input type="text" id="surname" name="nazwisko" value="nazwisko">
         <br>
 
         <label for="email">Twój adres e-mail</label>
         <br>
-        <input type="email" id="email" name="Adres email">
+        <input type="email" id="email" name="adres email">
         <br>
 
         <label for="tel">Numer telefonu</label>
         <br>
-        <input type="number" id="tel" name="Numer telefonu">
+        <input type="number" id="tel" name="numer telefonu">
         <br>
 
        <!-- wybór miasta START -->
@@ -37,7 +37,7 @@
         <label for="miasto">Twoje miasto</label>
         <br>
         
-        <select name="Miasto" id="miasto" name="Miasto">
+        <select id="miasto" name="miasto">
             <option value="Kraków" selected>Kraków</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
@@ -46,17 +46,22 @@
         
         <!-- wybór miasta STOP -->
 
-        <label for="sex">Twoja płeć</label>
-        <br>
-        
-        
+       
         <!-- wybór półci START -->
         
-        <select name="Płeć" id="sex" name="Płeć">
-            <option value="Męszczyzna">Mężczyzna</option>
-            <option value="Kobieta" selected>Kobieta</option>
-            <option value="Inna">Inna</option>
-        </select>
+        <label for="gender">Twoja płeć</label>
+        <br>
+        <form>
+        <label>
+            <input type="radio" name="gender" value="male" checked>Mężczyzna<br>
+            </label>
+        <label>
+            <input type="radio" name="gender" value="female">Kobieta<br>
+            </label>
+        <label>
+            <input type="radio" name="gender" value="other">Inna<br>
+            </label>
+        </form>
         <br>
         
         <!-- wybór półci STOP -->
@@ -72,10 +77,10 @@
 
         <label for="message">Wiadomość</label>
         <br>
-        <textarea name="Wiadomość" id="message" cols="30" rows="10"></textarea>
+        <textarea name="wiadomosc" id="message" cols="30" rows="10"></textarea>
         <br>
 
-        <input style="cursor: pointer" type="submit" value="Wyślij">
+        <input style="cursor: pointer" type="submit">
     </form>
     
     <!-- formularz - STOP -->
