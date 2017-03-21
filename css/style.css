@@ -1,0 +1,18 @@
+/* GENERAL STYLE - START - */
+
+* {
+    margin: 0;
+}
+/* FORM STYLE - START -  */
+
+form {
+    background-color: #213b50;
+    margin: 0;
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+}
+
+/* FORM STYLE - START -  */
+
+/* GENERAL STYLE - STOP - */
