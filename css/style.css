@@ -45,6 +45,30 @@ input[type]:focus {
     /*color: #fff;*/
 }
 
+textarea {
+    width: 250px;
+    background-color: #2b4a64;
+}
+
+textarea:focus {
+    background-color: #4e708c;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #1ac056;
+	border: #2b4a64 1px solid;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	font-weight: 800;
+	cursor: pointer
+}
+
+input[type="submit"]:hover {
+    background-color: #1AC0B3;
+    transition: .5s;
+}
 /* FORM STYLE - START -  */
 
 /* GENERAL STYLE - STOP - */
