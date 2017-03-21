@@ -13,32 +13,34 @@
     <!-- formularz - START -->
     
     <form action="https://formspree.io/a.nowakowski@athina.com.pl" method="POST">
-        <label for="name">Imię:</label>
+        <div class="input">
+            <label for="name">Imię:</label>
          
-        <input type="text" id="name" name="imie" value="imie">
-         
+            <input type="text" id="name" name="imie" value="imie">
 
-        <label for="surname">Nazwisko:</label>
-         
-        <input type="text" id="surname" name="nazwisko" value="nazwisko">
-         
 
-        <label for="email">Twój adres e-mail:</label>
-         
-        <input type="email" id="email" name="adres email">
-         
+            <label for="surname">Nazwisko:</label>
 
-        <label for="tel">Numer telefonu:</label>
-         
-        <input type="number" id="tel" name="numer telefonu">
+            <input type="text" id="surname" name="nazwisko" value="nazwisko">
+
+
+            <label for="email">Twój adres e-mail:</label>
+
+            <input type="email" id="email" name="adres email">
+
+
+            <label for="tel">Numer telefonu:</label>
+
+            <input type="number" id="tel" name="numer telefonu">
+        </div>
          
 
        <!-- wybór miasta START -->
        
-        <label for="miasto">Twoje miasto:</label>
+        <label for="city">Twoje miasto:</label>
          
         
-        <select id="miasto" name="miasto">
+        <select id="city" name="miasto">
             <option value="Kraków" selected>Kraków</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
@@ -52,13 +54,13 @@
         
         <label>Twoja płeć:</label>
          
-        <label for="male">
+        <label class="gender" for="male">
             <input type="radio" name="gender" value="male" id="male" checked>Mężczyzna 
             </label>
-        <label for="female">
+        <label class="gender" for="female">
             <input type="radio" name="gender" value="female" id="female">Kobieta 
             </label>
-        <label for="other">
+        <label class="gender" for="other">
             <input type="radio" name="gender" value="other" id="other">Inna 
             </label>
          

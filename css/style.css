@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 /* FORM STYLE - START -  */
 
@@ -9,8 +10,39 @@ form {
     background-color: #213b50;
     margin: 0;
     width: 500px;
-    height: 500px;
-    display: inline-block;
+    height: 600px;
+    color: #fff;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    padding: 2px;
+}
+
+.input input {
+    padding: 4px;
+    border: none;
+    color: #fff;
+    width: 250px;
+}
+
+input[type] {
+    background-color: #2b4a64;
+}
+
+input[type]:focus {
+    background-color: #4e708c;
+}
+
+#city {
+    background-color: #2b4a64;
+    color: #fff;
+}
+
+#city option {
+    background-color: #4e708c;
+    /*color: #fff;*/
 }
 
 /* FORM STYLE - START -  */
