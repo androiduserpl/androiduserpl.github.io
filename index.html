@@ -1,90 +1,337 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Formularz kontaktowy</title>
+    <title>Bootstrap project</title>
+
+    <!-- fonty google -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat:400,600|Roboto" rel="stylesheet">
+
+    <!-- Style bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Style main -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Style RWD -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
 </head>
 
 <body>
 
-    <!-- formularz - START -->
-    
-    <form action="https://formspree.io/a.nowakowski@athina.com.pl" method="POST">
-        <label for="name">Imię:</label>
-         
-        <input type="text" id="name" name="imie" value="imie">
-         
+    <!-- nav bar -->
 
-        <label for="surname">Nazwisko:</label>
-         
-        <input type="text" id="surname" name="nazwisko" value="nazwisko">
-         
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav-menu">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#glowne-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a id="brand" class="navbar-brand text-capitalize" href="http://google.pl">bootstrap project</a>
+            </div>
 
-        <label for="email">Twój adres e-mail:</label>
-         
-        <input type="email" id="email" name="adres email">
-         
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="glowne-menu">
+                <ul class="nav navbar-nav navbar-right text-uppercase" id="main-menu">
+                    <li><a href="#services">services </a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-        <label for="tel">Numer telefonu:</label>
-         
-        <input type="number" id="tel" name="numer telefonu">
-         
+    <!-- nav bar END -->
 
-       <!-- wybór miasta START -->
-       
-        <label for="miasto">Twoje miasto:</label>
-         
-        
-        <select id="miasto" name="miasto">
-            <option value="Kraków" selected>Kraków</option>
-            <option value="Warszawa">Warszawa</option>
-            <option value="Gdańsk">Gdańsk</option>
-        </select>
-         
-        
-        <!-- wybór miasta STOP -->
+    <!-- header -->
+    <header id="main-header">
+        <div id="header-content">
+            <h2>Nam liberto tempore, cum soluta</h2>
+            <h1 class="text-uppercase">Lorem ipsum dolor</h1>
+            <button id="button" class="text-uppercase btn btn-lg">view more</button>
+            <!--ma odsyłać do sekcji niżej-->
+        </div>
+    </header>
+    <!-- header END -->
 
-       
-        <!-- wybór półci START -->
-        
-        <label>Twoja płeć:</label>
-         
-        <label for="male">
-            <input type="radio" name="gender" value="male" id="male" checked>Mężczyzna 
-            </label>
-        <label for="female">
-            <input type="radio" name="gender" value="female" id="female">Kobieta 
-            </label>
-        <label for="other">
-            <input type="radio" name="gender" value="other" id="other">Inna 
-            </label>
-         
-        
-        <!-- wybór półci STOP -->
+    <!-- services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="secton-header col-lg-12">
+                    <h2 class="text-uppercase">services</h2>
+                    <p>Zobacz jakie fajne rzeczy robimy</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="services col-sm-4 col-xs-12">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisicing elit</p>
+                </div>
+                <div class="services col-sm-4 col-xs-12">
+                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisicing elit</p>
+                </div>
+                <div class="services col-sm-4 col-xs-12">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services END -->
 
-        <label for="message">Wiadomość</label>
-         
-        <textarea name="wiadomosc" id="message" rows="10"></textarea>
-         
-        
-        <!-- checkbox START -->
-         
-        <label for="checkbox">Wyrażam zgodę na przetwarzanie danych osobowych</label>
-         
-        <input style="cursor: pointer" type="checkbox" id="checkbox" name="Wyrażenie zgody">
-         
-        
-        <!-- chceckbox STOP -->
+    <!-- portfolio -->
+    <section id="portfolio">
+
+        <div class="container">
+            <div class="row">
+                <div class="secton-header col-lg-12">
+                    <h2 class="text-uppercase">Portfolio</h2>
+                    <p>Zobacz jakie fajne rzeczy robimy</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-items col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-unity">
+                        <div class="over-flow">
+                            <div class="portfolio-item" id="portfolio-item-1">
+                                <div class="portfolio-item-mask">
+                                    <div class="portfolio-item-content-inner">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>Kasztany wiosną</h3>
+                            <p>Bardzo krutki opis tego obrazka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-items col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-unity">
+                        <div class="over-flow">
+                            <div class="portfolio-item" id="portfolio-item-2">
+                                <div class="portfolio-item-mask">
+                                    <div class="portfolio-item-content-inner">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>Kasztany wiosną</h3>
+                            <p>Bardzo krutki opis tego obrazka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-items col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-unity">
+                        <div class="over-flow">
+                            <div class="portfolio-item" id="portfolio-item-3">
+                                <div class="portfolio-item-mask">
+                                    <div class="portfolio-item-content-inner">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>Kasztany wiosną</h3>
+                            <p>Bardzo krutki opis tego obrazka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-items col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-unity">
+                        <div class="over-flow">
+                            <div class="portfolio-item" id="portfolio-item-4">
+                                <div class="portfolio-item-mask">
+                                    <div class="portfolio-item-content-inner">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>Kasztany wiosną</h3>
+                            <p>Bardzo krutki opis tego obrazka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-items col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-unity">
+                        <div class="over-flow">
+                            <div class="portfolio-item" id="portfolio-item-5">
+                                <div class="portfolio-item-mask">
+                                    <div class="portfolio-item-content-inner">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>Kasztany wiosną</h3>
+                            <p>Bardzo krutki opis tego obrazka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-items col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-unity">
+                        <div class="over-flow">
+                            <div class="portfolio-item" id="portfolio-item-6">
+                                <div class="portfolio-item-mask">
+                                    <div class="portfolio-item-content-inner">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>Kasztany wiosną</h3>
+                            <p>Bardzo krutki opis tego obrazka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio END -->
+
+    <!-- team -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="secton-header col-lg-12">
+                    <h2 class="text-uppercase">nasz team</h2>
+                    <p>A tu zobaczysz jacy ludzie u nas pracują</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-main col-sm-4 col-xs-12">
+                    <img class="team" src="img/team/man-1.jpg" alt="">
+
+                    <div class="name">
+                        <p>Pan Naleśnik <br> Główno dowodzący</p>
+                    </div>
+                    <div class="social">
+                        <a href="http:/facebook.pl">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https:/twitter.pl">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https:/linedin.pl">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-main col-sm-4 col-xs-12">
+                    <img class="team" src="img/team/man-2.jpg" alt="">
+
+                    <div class="name">
+                        <p>Pan Naleśnik <br> Główno dowodzący</p>
+                    </div>
+                    <div class="social">
+                        <a href="http:/facebook.pl">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https:/twitter.pl">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https:/linedin.pl">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-main col-sm-4 col-xs-12">
+                    <img class="team" src="img/team/woman-1.jpg" alt="">
+
+                    <div class="name">
+                        <p>Pan Naleśnik <br> Główno dowodzący</p>
+                    </div>
+                    <div class="social">
+                        <a href="http:/facebook.pl">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https:/twitter.pl">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https:/linedin.pl">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eos quibusdam id nostrum voluptatem, esse aperiam magnam. Dolore provident distinctio.</p>
+        </div>
+    </section>
+    <!-- team END -->
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="secton-header col-lg-12">
+                    <h2 class="text-uppercase">Napisz do nas</h2>
+                    <p>możesz również zadzwonić</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="form" class="col-xs-12">
+                    <form action="https://formspree.io/a.nowakowski@athina.com.pl" method="POST">
+
+                        <div class=" col-xs-12 col-md-6">
+                            <div class="contact-input">
+
+                                <input type="text" id="name" name="imie" value="imie">
+                                <input type="email" id="email" name="adres email">
+                                <input type="number" id="tel" name="numer telefonu">
+
+                            </div>
+                        </div>
+                        <div class=" col-xs-12 col-md-6">
+                            <div class="contact-message">
+                                <textarea name="wiadomosc" id="message" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-        <input style="cursor: pointer" type="submit" value="Wyślij">
-    </form>
-    
-    <!-- formularz - STOP -->
 
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!-- js main -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

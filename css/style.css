@@ -1,21 +1,296 @@
-form {
-	background-color: #213b50;
-	padding: 20px;
+/* main style */
+
+
+/*
+*
+*dodatkowe info     
+    font-family: 'Droid Serif', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*
+*
+*
+*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* *** nav bar *** */
+
+#nav-menu {
+    border: 0;
+    background-color: transparent;
+}
+
+#brand {
+    font-family: 'Droid Serif', serif;
+    color: #fff;
+    transition: .5s;
+}
+#brand:hover {
+    color: #0ed8d6;
+}
+
+#main-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    transition: .5s;
+}
+#main-menu a:hover {
+    color: #0ed8d6;
+}
+
+/* *** on scroll *** */
+
+#nav-menu.scroll {
+    border: 0;
+    background-color: rgba(14, 216, 214, 0.87);
+}
+
+#brand.scroll {
+    font-family: 'Droid Serif', serif;
+    color: #fff;
+    transition: .5s;
+}
+#brand.scroll:hover {
+    color: #0ed8d6;
+}
+
+#main-menu a.scroll {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    transition: .5s;
+}
+#main-menu a.scroll:hover {
+    color: #0ed8d6;
+}
+
+/* *** on scroll END *** */
+
+/* *** nav bar END *** */
+
+/* ** header *** */
+
+header{
+    color: #fff;
+}
+
+#main-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28) ), url(../img/header/pictures_on_the_wall.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#header-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#button {
+    background-color: #0ed8d6;
+}
+.secton-header {
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* ** header END *** */
+
+/* *** services *** */
+
+
+#services i {
+    font-size: 3em;
+    color: #fff;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px #0ed8d6 solid;
+    background-color: #0ed8d6;
+    text-align: center;
+    line-height: 80px;
+    transition: all .5s; 
+}
+
+#services i:hover {
+    color: #0ed8d6;
+    border: 1px #0ed8d6 solid;
+    background-color: #fff;
+    text-align: center;
+    transition: all .5s;
+    transform: rotate(360deg);
+}
+
+.services {
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+/* *** services END *** */
+
+/* *** portfolio *** */
+
+#portfolio-item-1 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio-item-4 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio-item-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio-item-6 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+
+#portfolio {
+    background-color: #f7f7f7;
+    padding-bottom: 50px;
+}
+
+.col-unity {
+    background-color: #fff;
+}
+
+.portfolio-item {
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	font-size: initial;
 	color: #fff;
-	width: 600px;
+    transition: all .5s;
+    
+}
+.portfolio-item:hover {
+    transform: scale(1.2);
 }
 
-form input, form select{
-	margin-bottom: 10px;
+.portfolio-item-mask {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(14,216,214,0.85);
+	position: absolute;
+	opacity: 0;
+	transition: all 0.5s;
 }
 
-form label {
-	display: block;
-	margin-bottom: 5px;
+.portfolio-item-mask:hover {
+	opacity: 1;
 }
 
-form label[for='male'], form label[for='female']  {
-	display: inline;
+.portfolio-item-content {
+    background-color: #fff;
+    text-align: center;
+}
+
+.over-flow {
+    overflow: hidden;
+    height: 300px;
+}
+.portfolio-item-content-inner {
+	text-align: center;
+	width: 100%;
+    height: 100%%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	padding: 15px;
+}
+
+.portfolio-item-content-inner i {
+    font-size: 4em;
+	color: #fff;
+}
+
+/* *** services *** */
+
+
+/* *** team *** */
+
+.team-main {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.team {
+    max-height: 230px;
+    max-width: 230px;
+    border-radius: 50%;
+}
+
+.name {
+    padding: 10px;
+}
+
+.social {
+    font-size: 1.5em;
+}
+.social a {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transition: all .3s;
+    margin: 5px;
+}
+
+.social a:hover {
+    background-color: #0ed8d6;
+    border-color: #0ed8d6;
+    transition: all .3s;
+}
+/* *** team END *** */
+
+#contact {
+    background-image: url(../img/footer/world-map.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#contact h2,padding: ; {
+    color: #fff;
 }
 
 form select, form input[type="text"], form input[type="tel"], form input[type="email"], form textarea {
@@ -26,31 +301,10 @@ form select, form input[type="text"], form input[type="tel"], form input[type="e
 	height: 25px;
 }
 
-form textarea {
-	line-height: normal;
-	height: auto;
-}
-
-form select:focus ,form input:focus, form textarea:focus {
-	background-color:  #4e708c;
-	border: #fff 1px solid;
-	outline: none;
-}
-
-form input[type="checkbox"] {
-	float: left;
-}
-
-form input[type="submit"] {
-	background-color: #1ac056;
-	border: #2b4a64 1px solid;
+form select, form input[type="text"], form input[type="tel"], form input[type="email"], form textarea {
+	width: 300px;
+	background-color: #2b4a64;
 	color: #fff;
-	text-transform: uppercase;
-	padding: 10px 20px;
-	font-weight: 800;
-	cursor: pointer
-}
-
-form input[type="submit"]:hover {
-	background-color: #46e881;
+	border: #2b4a64 1px solid;
+	height: 25px;
 }
