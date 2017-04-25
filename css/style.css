@@ -11,13 +11,6 @@
 *
 *
 */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
 
 body {
     box-sizing: border-box;
@@ -30,6 +23,7 @@ body {
 #nav-menu {
     border: 0;
     background-color: transparent;
+    transition: 1s;
 }
 
 #brand {
@@ -45,7 +39,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: #fff;
-    transition: .5s;
+    transition: 1s;
 }
 #main-menu a:hover {
     color: #0ed8d6;
@@ -56,6 +50,7 @@ body {
 #nav-menu.scroll {
     border: 0;
     background-color: rgba(14, 216, 214, 0.87);
+    transition: 1s;
 }
 
 #brand.scroll {
@@ -289,29 +284,52 @@ header{
 }
 /* *** team END *** */
 
+/* *** contact *** */
+
 #contact {
-    background-image: url(../img/footer/world-map.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28) ), url(../img/footer/world-map.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+    padding-bottom: 50px;
 }
 
-#contact h2,padding: ; {
+#contact .secton-header {
     color: #fff;
 }
 
-form select, form input[type="text"], form input[type="tel"], form input[type="email"], form textarea {
-	width: 300px;
-	background-color: #2b4a64;
+/* *** usuwanie strzałeczek z input number *** */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* *** usuwanie strzałeczek z input number END *** */
+
+form input, #message {
+    width: 100%;
+	background-color: #eb28be;
 	color: #fff;
-	border: #2b4a64 1px solid;
-	height: 25px;
+	border: 0px solid;
+    border-radius: 5px;
+    padding: 15px;
+    
 }
 
-form select, form input[type="text"], form input[type="tel"], form input[type="email"], form textarea {
-	width: 300px;
-	background-color: #2b4a64;
-	color: #fff;
-	border: #2b4a64 1px solid;
-	height: 25px;
+input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+
+#message {
+    height: 100%;
+    width: 100%;
+/*max-width: 48vw;  moża da się jakoś zabespieczyć by nie było to pole nigdy szersze i wywalało pasek przewijania */
+}
+
+#sub {
+    text-align: center;
 }

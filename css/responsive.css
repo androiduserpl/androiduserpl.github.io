@@ -1,0 +1,8 @@
+@media all and (max-width:768px) {
+    #message {
+        margin-top: 20px;
+    }
+    form input {
+        text-align: center;
+    }
+}
